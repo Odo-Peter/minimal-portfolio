@@ -1,21 +1,30 @@
 @import "../variables.modules";
 
-nav {
-  transition: $transition;
-}
+// nav {
+//   transition: $transition;
+//   background-color: $dark;
+// }
 
 .active {
-  border-bottom: 5px solid;
+  border-bottom: 4px solid rgb(4, 167, 167);
+  border-radius: 4px;
+  opacity: 100%;
   border-image-slice: 1;
+  // color: rgb(99, 95, 95);
 }
 
 li {
+  opacity: 70%;
   transition: $transition;
 
   &:hover {
-    transform: translateY(-3px);
+    transform: translateY(-2px);
     transition: $transition;
   }
+}
+
+li:hover {
+  opacity: 100%;
 }
 
 .link:hover {

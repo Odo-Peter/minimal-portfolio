@@ -9,6 +9,11 @@ footer {
   color: $white;
   transition: all 400ms;
 
+  nav {
+    transition: $transition;
+    background-color: $dark;
+  }
+
   a, i, li {
     color: $white;
     transition: color 400ms;
@@ -27,6 +32,11 @@ footer {
   background-color: $white;
   color: $dark;
   transition: all 400ms;
+
+  nav {
+    transition: $transition;
+    background-color: $white;
+  }
 }
 
 

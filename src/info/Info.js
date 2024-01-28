@@ -1,140 +1,125 @@
-import self from "../img/self.png"
-import mock1 from "../img/mock1.png"
-import mock2 from "../img/mock2.png"
-import mock3 from "../img/mock3.png"
-import mock4 from "../img/mock4.png"
-import mock5 from "../img/mock5.png"
+import self from '../img/self.png';
+import inquire from '../img/inquire.png';
+import help from '../img/help.png';
+import itube from '../img/itube.png';
+import port from '../img/port.png';
+import scraper from '../img/scraper.png';
 
-/* Hi there! Thanks for checking out my portfolio template. Be sure to read the comments to get a better understanding of
-how to make this template work best for you! */
-
-export let colors = ["rgb(0,255,164)", "rgb(166,104,255)"];
-/*
-I highly recommend using a gradient generator like https://gradientgenerator.paytonpierce.dev/ to generate a pair of colors that you like.
-These colors will be used to style your name on the homepage, the background of your picture, and some other accents throughout
-the site.
- */
-
-
-/*
-So let's get started! Some of the info below is pretty self-explanatory, like 'firstName' and 'bio'. I'll try to explain anything
-that might not be obvious right off the bat :) I recommend looking at the template example live using "npm start" to get an idea
-of what each of the values mean.
- */
+export let colors = ['rgb(0,255,164)', 'rgb(166,104,255)'];
 
 export const info = {
-    firstName: "John",
-    lastName: "Smith",
-    initials: "js", // the example uses first and last, but feel free to use three or more if you like.
-    position: "a Full Stack Developer",
-    selfPortrait: self, // don't change this unless you want to name your self-portrait in the "img" folder something else!
-    gradient: `-webkit-linear-gradient(135deg, ${colors})`, // don't change this either
-    baseColor: colors[0],
-    miniBio: [ // these are just some "tidbits" about yourself. You can look at mine https://paytonjewell.github.io/#/ for an example if you'd like
-        {
-            emoji: '☕',
-            text: 'fueled by coffee'
-        },
-        {
-            emoji: '🌎',
-            text: 'based in the US'
-        },
-        {
-            emoji: "💼",
-            text: "Systems Engineer at Google"
-        },
-        {
-            emoji: "📧",
-            text: "johnsmith@gmail.com"
-        }
+  firstName: 'Peter',
+  lastName: 'Odo',
+  initials: 'PO',
+  position: 'a Frontend Developer',
+  selfPortrait: self,
+  gradient: `-webkit-linear-gradient(135deg, ${colors})`,
+  baseColor: colors[0],
+  miniBio: [
+    {
+      emoji: '☕',
+      text: 'Consistency over Intensity',
+    },
+    {
+      emoji: '🌎',
+      text: 'Based in the Nigeria',
+    },
+    {
+      emoji: '💼',
+      text: 'Developer | Coding Instructor',
+    },
+    {
+      emoji: '📧',
+      text: 'odopeter33@gmail.com',
+    },
+  ],
+  socials: [
+    {
+      link: 'https://github.com/Odo-Peter',
+      icon: 'fa fa-github',
+      label: 'github',
+    },
+    {
+      link: 'https://linkedin.com/in/peter-odo-254aa026b',
+      icon: 'fa fa-linkedin',
+      label: 'linkedin',
+    },
+    {
+      link: 'https://twitter.com/Odo_Peter_Ebere',
+      icon: 'fa fa-twitter',
+      label: 'twitter',
+    },
+  ],
+  bio: "Hello! I'm Peter. I'm a freelance web developer and a coding instructor for kids. I am proficient with frontend technologies, and I enjoy learning new stuffs that challenges me. We should have a chat!",
+  skills: {
+    proficientWith: [
+      'javascript',
+      'react',
+      'git',
+      'github',
+      'MongDB',
+      'nodejs',
+      'html5',
+      'css3',
+      'tailwindcss',
     ],
-    socials: [
-        {
-            link: "https://facebook.com",
-            icon: 'fa fa-facebook',
-            label: 'facebook'
-        },
-        {
-            link: "https://instagram.com",
-            icon: 'fa fa-instagram',
-            label: 'instagram'
-        },
-        {
-            link: "https://github.com",
-            icon: "fa fa-github",
-            label: 'github'
-        },
-        {
-            link: "https://linkedin.com",
-            icon: "fa fa-linkedin",
-            label: 'linkedin'
-        },
-        {
-            link: "https://twitter.com",
-            icon: "fa fa-twitter",
-            label: 'twitter'
-        }
-// Feel free to remove any of these that you don't have. I'll write an FAQ on how to add new ones later, let me know if you have a request for an icon!
-// Just change the links so that they lead to your social profiles.
-
-    ],
-    bio: "Hello! I'm John. I'm a systems engineer for Google. I studied CompSci at Harvard, I enjoy long walks on the beach, and I believe artificial intelligence will inevitably rule us all one day. You should hire me!",
-    skills:
-        {
-            proficientWith: ['javascript', 'react', 'git', 'github', 'bootstrap', 'html5', 'css3', 'figma'],
-            exposedTo: ['nodejs', 'python', 'adobe illustrator']
-        }
-    ,
-    hobbies: [
-        {
-            label: 'reading',
-            emoji: '📖'
-        },
-        {
-            label: 'theater',
-            emoji: '🎭'
-        },
-        {
-            label: 'movies',
-            emoji: '🎥'
-        },
-        {
-            label: 'cooking',
-            emoji: '🌶'
-        }
-// Same as above, change the emojis to match / relate to your hobbies or interests.
-// You can also remove the emojis if you'd like, I just think they look cute :P
-    ],
-    portfolio: [ // This is where your portfolio projects will be detailed
-        {
-            title: "Project 1",
-            live: "https://paytonpierce.dev", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
-            source: "https://github.com/paytonjewell", // this should be a link to the **repository** of the project, where the code is hosted.
-            image: mock1
-        },
-        {
-            title: "Project 2",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
-            image: mock2
-        },
-        {
-            title: "Project 3",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
-            image: mock3
-        },
-        {
-            title: "Project 4",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
-            image: mock4
-        },
-        {
-            title: "Project 5",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
-            image: mock5
-        }
-    ]
-}
+    exposedTo: ['sql', 'python', 'typescript'],
+  },
+  hobbies: [
+    {
+      label: 'reading',
+      emoji: '📖',
+    },
+    {
+      label: 'exploring',
+      emoji: '🎭',
+    },
+    {
+      label: 'movies',
+      emoji: '🎥',
+    },
+    {
+      label: 'writing',
+      emoji: '🌶',
+    },
+  ],
+  portfolio: [
+    {
+      title: 'Inquire_Hub - AI Personal Assistant',
+      live: 'https://inquire.onrender.com',
+      source: 'https://github.com/Odo-Peter/inquireHub-FE',
+      image: inquire,
+    },
+    {
+      title: 'Help_Me_Out - Screen Recorder',
+      live: 'https://paytonpierce.dev',
+      source: 'https://github.com/Odo-Peter/chrome-extension-FE',
+      image: help,
+    },
+    {
+      title: 'Get_Scraped - Ecommerce Web Scraper',
+      live: 'https://landing.odopeter.tech/',
+      source: 'https://github.com/Odo-Peter/portfolio-landing',
+      image: scraper,
+    },
+    {
+      title: 'Personal_Portfolio',
+      live: 'https://dev.odopeter.tech/',
+      source: 'https://github.com/paytonjewell',
+      image: port,
+    },
+    // {
+    //   title: 'iTube - Customizable YouTube clone',
+    //   live: 'https://paytonpierce.dev',
+    //   source: 'https://github.com/paytonjewell',
+    //   image: mock5,
+    // },
+    {
+      title: 'iTube - Customizable YouTube clone',
+      live: 'https://itube-app.onrender.com/',
+      source:
+        'https://github.com/Odo-Peter/iTube_V1.0.0/tree/master/iTube_client',
+      image: itube,
+    },
+  ],
+};

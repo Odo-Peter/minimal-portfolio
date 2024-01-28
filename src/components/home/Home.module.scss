@@ -30,12 +30,15 @@ h2 {
 a {
   color: $dark;
   transition: color 200ms ease;
+  opacity: 80%;
 }
 
 a:hover {
-  color: $lightgray;
   transition: color 200ms ease;
+  opacity: 100%;
+
 }
+
 
 @keyframes wave {
   0% { transform: rotate( 0.0deg) }
