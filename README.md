@@ -117,7 +117,7 @@ And you're done!
 
 If you have any questions or issues with the setup process, feel free to contact me by any of the means below:
 
-[Twitter](https://x.com/Odo_Peter_Ebere) | paytontaylor96@gmail.com
+[Twitter](https://x.com/Odo_Peter_Ebere) | odopeter33@gmail.com
 
 Or, use this repo and post an "issue" :)
 
